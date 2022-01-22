@@ -6,14 +6,28 @@
     <!-- block은 그 옆에 뭐가 못 옴(div, main, footer..)-->
     <!-- 그 반대는 inline(a, span, img, code...)-->
     <!-- in the same line-->
+    <!-- inline은 height, width라는 개념이 없음 / like android xml's wrap-content-->
+
+    <!-- box는 margin, border, padding가 있음-->
+    <!-- browser가 자동으로 style 속성을 부여한다.-->
+    <!-- margin은 border 바깥 공간-->
     <style>
+      body {
+        margin: 0;
+      }
       div {
+        margin-left: 50px;
         height: 150px;
         width: 150px;
         background-color: tomato;
       }
       span {
+        display: block;
         background-color: turquoise;
+      }
+      img {
+        height: 300px;
+        width: 300px;
       }
     </style>
   </head>
