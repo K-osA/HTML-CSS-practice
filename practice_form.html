@@ -5,14 +5,36 @@
   </head>
   <body>
     <form>
-      <label for="profile">Profile Photo</label>
-      <input id="profile" type="file" accept=".pdf, .png" />
-      <label for="first-name">First Name</label>
-      <input id="first-name" required placeholder="Name" type="text" />
-      <input required placeholder="Last Name" disabled type="text" />
-      <input required placeholder="Username" type="text" />
-      <input required placeholder="Password" minlength="10" type="password" />
-      <input type="submit" value="Create Account" />
+      <header>
+        <label for="profile">Profile Photo</label>
+        <input id="profile" type="file" accept=".pdf, .png" />
+      </header>
+      <aside>content but not main</aside>
+      <main>
+        <p>paragraph</p>
+        <span>short-text</span>
+        <address>붓산~</address>
+        <div>
+          <label for="first-name">First Name</label>
+          <input id="first-name" required placeholder="Name" type="text" />
+        </div>
+        <div>
+          <input required placeholder="Last Name" disabled type="text" />
+        </div>
+        <div>
+          <input required placeholder="Username" type="text" />
+        </div>
+        <div>
+          <input
+            required
+            placeholder="Password"
+            minlength="10"
+            type="password"
+          />
+        </div>
+        <input type="submit" value="Create Account" />
+        <div>&copy; 2022 KSW</div>
+      </main>
     </form>
   </body>
 </html>
