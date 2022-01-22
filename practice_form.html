@@ -5,8 +5,10 @@
   </head>
   <body>
     <form>
-      <input required type="file" accept=".pdf, .png" />
-      <input required placeholder="Name" type="text" />
+      <label for="profile">Profile Photo</label>
+      <input id="profile" type="file" accept=".pdf, .png" />
+      <label for="first-name">First Name</label>
+      <input id="first-name" required placeholder="Name" type="text" />
       <input required placeholder="Last Name" disabled type="text" />
       <input required placeholder="Username" type="text" />
       <input required placeholder="Password" minlength="10" type="password" />
