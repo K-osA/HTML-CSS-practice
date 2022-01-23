@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Learn about combinators</title>
+    <style>
+      body {
+        height: 1000vh;
+        margin: 50px;
+      }
+      span {
+        background-color: yellowgreen;
+        padding: 5px;
+        border-radius: 10px;
+      }
+
+      /* children selector */
+      /* div p span = same */
+      p span {
+        color: white;
+      }
+
+      /* next to (sibiling but only one) */
+      p + span {
+        text-decoration: underline;
+      }
+      /* (child) div > span = same */
+      /* ~ mean sibiling (literally) */
+
+      input:required {
+        border-color: tomato;
+      }
+      input:optional {
+        border-color: wheat;
+      }
+      input[type="password"] {
+        background-color: thistle;
+      }
+      /* ~= contains */
+      input[placeholder~="name"] {
+        background-color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis fugit
+        necessitatibus accusamus cumque quo quas voluptas quam quia?
+        <span>inside</span>
+      </p>
+      <span>hello</span>
+    </div>
+    <div>
+      <form>
+        <input type="text" placeholder="First name" />
+        <input type="text" placeholder="Last name" />
+        <input type="password" required placeholder="password" />
+      </form>
+    </div>
+  </body>
+</html>
